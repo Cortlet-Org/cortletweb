@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Mail, XCircle } from "lucide-react";
+import { track } from "@vercel/analytics";
 
 type SubmitStatus = "idle" | "loading" | "success" | "invalid" | "error";
 
@@ -31,6 +32,7 @@ export function WaitlistForm() {
         const data = await res.json();
         setReferralToken(data.referralToken ?? null);
         setStatus("success");
+        track("waitlist_signup_success");
       } else {
         setStatus(res.status === 400 ? "invalid" : "error");
       }

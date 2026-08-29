@@ -1,9 +1,6 @@
 import arcjet, { shield, fixedWindow } from "@arcjet/next";
 import { NextRequest, NextResponse } from "next/server";
 
-// Initialize the Arcjet client with our environment key and two layered rules:
-// 1. Shield: blocks common web exploits (SQLi, XSS, protocol anomalies).
-// 2. fixedWindow: rate-limits /api/waitlist to 5 requests per 60s per client IP.
 const aj = arcjet({
   key: process.env.ARCJET_KEY!,
   rules: [
@@ -17,23 +14,45 @@ const aj = arcjet({
   ],
 });
 
-export async function proxy(req: NextRequest): Promise<NextResponse> {
-  // Run the request through all configured Arcjet security rules.
-  const decision = await aj.protect(req);
+const RESTRUCTED_REGIONS = [
+  "AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR",
+  "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK",
+  "SI", "ES", "SE", "GB", "IS", "LI", "NO"
+];
 
-  // If any rule is tripped, block the request immediately with a 429 response.
-  if (decision.isDenied()) {
-    return NextResponse.json(
-      { error: "Too many network registration attempts. Operational node throttled." },
-      { status: 429 },
+export async function proxy(req: NextRequest): Promise<NextResponse> {
+  // 1. FIRST DEFENSIVE LAYER — Immediate Edge Geoblock
+  const country = req.headers.get("x-vercel-ip-country") || "";
+  if (RESTRUCTED_REGIONS.includes(country)) {
+    return new NextResponse(
+        "403_ACCESS_DENIED // GEOGRAPHIC_RESTRICTION_ACTIVE // CORTLET NETWORK OPERATIONS CLOSED IN THIS JURISDICTION.",
+        { status: 403, headers: { "Content-Type": "text/plain" } }
     );
   }
 
-  // Request is verified safe — pass execution downstream to the serverless endpoint.
+  // 2. SECOND DEFENSIVE LAYER — Run Arcjet Security Analytics Rules
+  const decision = await aj.protect(req);
+
+  // 3. CODERABBIT FIX — Dynamic Denial HTTP Status Resolution
+  if (decision.isDenied()) {
+    if (decision.reason.isRateLimit()) {
+      return NextResponse.json(
+          { error: "Too many network registration attempts. Operational node throttled." },
+          { status: 429 }
+      );
+    }
+
+    // Fallback status for Shield bot or injection rule blocks
+    return NextResponse.json(
+        { error: "Malicious network vector detected. Transaction terminated." },
+        { status: 403 }
+    );
+  }
+
+  // 4. REQUEST VERIFIED SAFE — Pass execution downstream to serverless endpoints
   return NextResponse.next();
 }
 
-// Scope this proxy exclusively to the waitlist registration endpoint.
 export const config = {
   matcher: ["/api/waitlist"],
 };

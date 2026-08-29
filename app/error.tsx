@@ -13,7 +13,7 @@ export default function ErrorPage({ error, reset }: ErrorPageProps) {
       </p>
 
       <h1 className="font-mono font-bold text-3xl sm:text-4xl tracking-tight uppercase mb-4">
-        500 // ARCHITECTURAL_PIPELINE_FAULT
+        500 Server Error
       </h1>
 
       {error.digest && (
@@ -24,7 +24,7 @@ export default function ErrorPage({ error, reset }: ErrorPageProps) {
 
       <p className="text-xs text-zinc-500 dark:text-zinc-400 mb-8 max-w-sm">
         An unrecoverable fault was detected in the rendering pipeline. Attempt a
-        cold re-render or return to the home node.
+        cold re-render or return to homepage.
       </p>
 
       <button
