@@ -68,6 +68,16 @@ export const metadata: Metadata = {
         "msapplication-TileColor": "#000000",
         "msapplication-TileImage": "/mstile-144x144.png",
     },
+    // 6. KEYWORDS
+    keywords: [
+        "webhook tools",
+        "developer webhook utilities",
+        "serverless webhook proxy",
+        "websocket to webhook translation",
+        "realtime event routing",
+        "stateless webhook relay",
+        "backend developer tools"
+    ],
 };
 
 

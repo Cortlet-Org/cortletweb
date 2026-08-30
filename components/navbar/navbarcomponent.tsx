@@ -46,7 +46,7 @@ export function NavbarComponent() {
               </Link>
 
               <a
-                  href="https://github.com/cortlet"
+                  href="https://github.com/cortlet-org"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xs text-zinc-500 transition-colors hover:text-zinc-950 dark:hover:text-zinc-100"
@@ -103,7 +103,7 @@ export function NavbarComponent() {
                 </Link>
 
                 <a
-                    href="https://github.com/cortlet"
+                    href="https://github.com/cortlet-org"
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setOpen(false)}

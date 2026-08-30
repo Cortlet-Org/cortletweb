@@ -1,531 +1,828 @@
 export const TERMS_OF_SERVICE = `
-<div class="legal-page">
-
-  <h1>Terms and Conditions</h1>
-
-  <div class="legal-meta">
-    <p><strong>Effective Date:</strong> 2026-08-29</p>
-    <p><strong>Last Updated:</strong> 2026-08-29</p>
-  </div>
-
-  <p>
-    These Terms and Conditions ("Terms") govern your access to and use of
-    Cortlet's websites, software, developer tools, APIs, applications,
-    documentation, and related services.
-  </p>
-
-  <p>
-    By accessing or using any Cortlet service, you agree to these Terms.
-    If you do not agree to these Terms, you must not use the Service.
-  </p>
-
-  <div class="legal-toc">
-    <h2>Table of Contents</h2>
-
-    <ol>
-      <li><a href="#introduction">Introduction</a></li>
-      <li><a href="#definitions">Definitions</a></li>
-      <li><a href="#eligibility">Eligibility</a></li>
-      <li><a href="#accounts">Accounts and Security</a></li>
-      <li><a href="#license">License to Use the Service</a></li>
-      <li><a href="#intellectual-property">Intellectual Property</a></li>
-      <li><a href="#user-content">User Content</a></li>
-      <li><a href="#acceptable-use">Acceptable Use</a></li>
-      <li><a href="#third-party-services">Third-Party Services</a></li>
-      <li><a href="#availability">Service Availability and Changes</a></li>
-      <li><a href="#disclaimer">Disclaimer of Warranties</a></li>
-      <li><a href="#limitation-liability">Limitation of Liability</a></li>
-      <li><a href="#indemnification">Indemnification</a></li>
-      <li><a href="#termination">Termination</a></li>
-      <li><a href="#governing-law">Governing Law</a></li>
-      <li><a href="#dispute-resolution">Dispute Resolution</a></li>
-      <li><a href="#changes">Changes to These Terms</a></li>
-      <li><a href="#severability">Severability</a></li>
-      <li><a href="#waiver">Waiver</a></li>
-      <li><a href="#entire-agreement">Entire Agreement</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ol>
-  </div>
-
-
-  <h2 id="introduction">1. Introduction</h2>
-
-  <p>
-    Cortlet is a software brand that provides websites, software products,
-    developer tools, APIs, applications, documentation, and related services
-    (collectively, the "Service").
-  </p>
-
-  <p>
-    These Terms form an agreement between you and the operator of Cortlet
-    concerning your use of the Service.
-  </p>
-
-
-  <h2 id="definitions">2. Definitions</h2>
-
-  <ul>
-    <li>
-      <strong>"Cortlet", "we", "us", or "our"</strong> means the Cortlet brand
-      and the person or persons operating it.
-    </li>
-
-    <li>
-      <strong>"Service"</strong> means Cortlet websites, APIs, software,
-      applications, developer tools, documentation, and related services.
-    </li>
-
-    <li>
-      <strong>"User", "you", or "your"</strong> means any person or entity
-      accessing or using the Service.
-    </li>
-
-    <li>
-      <strong>"Content"</strong> means text, software, data, graphics,
-      documentation, files, information, or other materials available through
-      the Service.
-    </li>
-
-    <li>
-      <strong>"User Content"</strong> means content submitted, transmitted,
-      uploaded, or otherwise provided by a User through the Service.
-    </li>
-  </ul>
-
-
-  <h2 id="eligibility">3. Eligibility</h2>
-
-  <p>
-    You may use the Service only if you are legally permitted to enter into
-    these Terms under applicable law.
-  </p>
-
-  <p>
-    If you use the Service on behalf of an organization, you represent that
-    you have authority to bind that organization to these Terms.
-  </p>
-
-
-  <h2 id="accounts">4. Accounts and Security</h2>
-
-  <p>
-    Certain parts of the Service may require an account.
-  </p>
-
-  <p>
-    You are responsible for maintaining the confidentiality and security of
-    your account credentials and for activity occurring through your account.
-  </p>
-
-  <p>
-    You agree to provide accurate information and to notify us promptly if you
-    believe your account, credentials, API keys, tokens, or other authentication
-    information have been compromised.
-  </p>
-
-  <p>
-    We may suspend access to an account where we reasonably believe doing so is
-    necessary to protect the Service, other users, or the security of our systems.
-  </p>
-
-
-  <h2 id="license">5. License to Use the Service</h2>
-
-  <p>
-    Subject to these Terms, Cortlet grants you a limited, revocable,
-    non-exclusive, non-transferable, and non-sublicensable license to access
-    and use the Service for lawful personal or internal business purposes.
-  </p>
-
-  <p>
-    This license does not transfer ownership of any Cortlet software,
-    intellectual property, or Content to you.
-  </p>
-
-
-  <h2 id="intellectual-property">6. Intellectual Property</h2>
-
-  <h3>6.1 Cortlet Content</h3>
-
-  <p>
-    Unless otherwise stated, the Service and its original software, design,
-    branding, documentation, graphics, interfaces, features, and functionality
-    are owned by or licensed to Cortlet.
-  </p>
-
-  <p>
-    They may be protected by copyright, trademark, trade dress, and other
-    applicable intellectual property laws.
-  </p>
-
-  <h3>6.2 Open-Source Software</h3>
-
-  <p>
-    Certain Cortlet software may be released under separate open-source
-    licenses. Where an open-source license applies, that license governs your
-    use of the relevant software and takes precedence over conflicting
-    provisions of these Terms with respect to that software.
-  </p>
-
-  <h3>6.3 Restrictions</h3>
-
-  <p>Except where expressly permitted by law or an applicable software license, you may not:</p>
-
-  <ul>
-    <li>Copy, reproduce, modify, or distribute proprietary Cortlet Content without authorization</li>
-    <li>Remove copyright, trademark, attribution, or proprietary notices</li>
-    <li>Misrepresent Cortlet software or Content as your own</li>
-    <li>Use Cortlet branding in a way that falsely suggests sponsorship or endorsement</li>
-    <li>Attempt to obtain proprietary source code where the software is not provided as open source</li>
-  </ul>
-
-
-  <h2 id="user-content">7. User Content</h2>
-
-  <p>
-    You retain ownership of User Content you submit to the Service.
-  </p>
-
-  <p>
-    Where necessary to operate the Service, you grant Cortlet a limited license
-    to process, transmit, store, reproduce, and otherwise handle User Content
-    solely to provide, secure, maintain, or improve the Service.
-  </p>
-
-  <p>
-    You represent that you have the necessary rights to submit User Content and
-    that doing so does not violate applicable law or the rights of another person.
-  </p>
-
-
-  <h2 id="acceptable-use">8. Acceptable Use</h2>
-
-  <p>You must not use the Service to:</p>
-
-  <ul>
-    <li>Violate applicable laws or regulations</li>
-    <li>Infringe intellectual property, privacy, or other legal rights</li>
-    <li>Distribute malware, viruses, ransomware, or malicious code</li>
-    <li>Attempt unauthorized access to systems, accounts, or networks</li>
-    <li>Interfere with the normal operation, availability, or security of the Service</li>
-    <li>Abuse, overload, disrupt, or intentionally degrade Cortlet infrastructure</li>
-    <li>Bypass rate limits, authentication systems, or security controls</li>
-    <li>Use automated scraping or crawling in violation of published technical restrictions</li>
-    <li>Send spam, phishing communications, or deceptive messages</li>
-    <li>Use the Service for fraudulent or intentionally harmful activity</li>
-  </ul>
-
-  <p>
-    We may restrict or suspend access where reasonably necessary to protect
-    Cortlet, our infrastructure, or other users.
-  </p>
-
-
-  <h2 id="third-party-services">9. Third-Party Services</h2>
-
-  <p>
-    The Service may integrate with or link to third-party products, platforms,
-    APIs, websites, hosting providers, authentication providers, or other services.
-  </p>
-
-  <p>
-    Cortlet does not control third-party services and is not responsible for
-    their availability, security, content, policies, or practices.
-  </p>
-
-  <p>
-    Your use of third-party services may be governed by separate terms and
-    privacy policies provided by those third parties.
-  </p>
-
-
-  <h2 id="availability">10. Service Availability and Changes</h2>
-
-  <p>
-    We may modify, update, replace, suspend, restrict, or discontinue any part
-    of the Service at any time.
-  </p>
-
-  <p>
-    We do not guarantee that the Service will always be available,
-    uninterrupted, error-free, secure, or compatible with every device,
-    operating system, dependency, or third-party service.
-  </p>
-
-  <p>
-    Features marked experimental, preview, beta, alpha, development, or similar
-    may be changed or discontinued without notice.
-  </p>
-
-
-  <h2 id="disclaimer">11. Disclaimer of Warranties</h2>
-
-  <div class="legal-notice">
-    <p class="legal-uppercase">
-      <strong>
-        To the maximum extent permitted by applicable law, the Service is
-        provided "as is" and "as available."
-      </strong>
-    </p>
-  </div>
-
-  <p>
-    Cortlet makes no express or implied warranty that the Service will be
-    uninterrupted, error-free, secure, accurate, complete, reliable, or
-    suitable for a particular purpose.
-  </p>
-
-  <p>
-    To the maximum extent permitted by applicable law, Cortlet disclaims all
-    warranties, whether express, implied, statutory, or otherwise, including
-    implied warranties of merchantability, fitness for a particular purpose,
-    title, and non-infringement.
-  </p>
-
-  <p>
-    You are responsible for evaluating whether the Service is suitable for
-    your intended use and for maintaining appropriate backups, safeguards,
-    testing procedures, and recovery mechanisms.
-  </p>
-
-
-  <h2 id="limitation-liability">12. Limitation of Liability</h2>
-
-  <h3>12.1 Excluded Damages</h3>
-
-  <p class="legal-uppercase">
-    To the maximum extent permitted by applicable law, Cortlet and the person
-    or persons operating Cortlet shall not be liable for any indirect,
-    incidental, special, exemplary, consequential, or punitive damages.
-  </p>
-
-  <p>This includes, without limitation, damages arising from:</p>
-
-  <ul>
-    <li>Loss of profits or revenue</li>
-    <li>Loss of business opportunities</li>
-    <li>Loss, corruption, or destruction of data</li>
-    <li>Loss of goodwill</li>
-    <li>Business interruption</li>
-    <li>Loss of use</li>
-    <li>Service downtime or unavailability</li>
-    <li>Security incidents caused by third parties</li>
-    <li>Reliance on information provided through the Service</li>
-    <li>Third-party services, integrations, or dependencies</li>
-  </ul>
-
-  <p>
-    This limitation applies regardless of the legal theory on which a claim is
-    based, including contract, tort, negligence, strict liability, statute, or
-    otherwise, even if Cortlet has been advised of the possibility of such damages.
-  </p>
-
-  <h3>12.2 Aggregate Liability Cap</h3>
-
-  <p class="legal-uppercase">
-    To the maximum extent permitted by applicable law, the total aggregate
-    liability of Cortlet and the person or persons operating Cortlet for all
-    claims arising out of or relating to the Service or these Terms shall not
-    exceed the greater of:
-  </p>
-
-  <ul>
-    <li>
-      The amount you paid to Cortlet for the specific Service giving rise to
-      the claim during the twelve months immediately preceding the event giving
-      rise to liability; or
-    </li>
-
-    <li>
-      INR 1,000 if you did not pay Cortlet for that Service.
-    </li>
-  </ul>
-
-  <h3>12.3 Exceptions Required by Law</h3>
-
-  <p>
-    Nothing in these Terms excludes or limits liability where such liability
-    cannot lawfully be excluded or limited under applicable law.
-  </p>
-
-  <p>
-    Some jurisdictions may not permit certain limitations or exclusions.
-    Where such restrictions apply, these limitations shall apply only to the
-    maximum extent permitted by law.
-  </p>
-
-
-  <h2 id="indemnification">13. Indemnification</h2>
-
-  <p>
-    To the extent permitted by applicable law, you agree to indemnify and hold
-    harmless Cortlet and the person or persons operating it from claims,
-    liabilities, losses, damages, and reasonable costs arising from:
-  </p>
-
-  <ul>
-    <li>Your unlawful use of the Service</li>
-    <li>Your material violation of these Terms</li>
-    <li>Your infringement of another person's rights</li>
-    <li>User Content submitted by you</li>
-  </ul>
-
-
-  <h2 id="termination">14. Termination</h2>
-
-  <h3>14.1 Termination by Cortlet</h3>
-
-  <p>
-    We may suspend, restrict, or terminate your access to the Service if you
-    materially violate these Terms, create a security risk, misuse the Service,
-    or where suspension or termination is reasonably necessary to protect the
-    Service or other users.
-  </p>
-
-  <h3>14.2 Termination by You</h3>
-
-  <p>
-    You may stop using the Service at any time.
-  </p>
-
-  <p>
-    Where account deletion functionality is available, you may use that
-    functionality or contact
-    <a href="mailto:support@cortlet.com"> support@cortlet.com</a>.
-  </p>
-
-  <h3>14.3 Effect of Termination</h3>
-
-  <p>
-    Upon termination, your right to use the affected Service ends.
-  </p>
-
-  <p>
-    Provisions which by their nature should survive termination shall remain
-    effective, including intellectual property provisions, disclaimers,
-    limitations of liability, dispute provisions, and indemnification obligations.
-  </p>
-
-
-  <h2 id="governing-law">15. Governing Law</h2>
-
-  <p>
-    These Terms shall be governed by and construed in accordance with the laws
-    of India, without regard to conflict-of-law principles.
-  </p>
-
-
-  <h2 id="dispute-resolution">16. Dispute Resolution</h2>
-
-  <h3>16.1 Informal Resolution</h3>
-
-  <p>
-    Before commencing formal proceedings, you agree to make a reasonable
-    attempt to resolve the dispute by contacting Cortlet and providing a
-    description of the issue.
-  </p>
-
-  <h3>16.2 Arbitration</h3>
-
-  <p>
-    Subject to applicable law, disputes arising out of or relating to these
-    Terms or the Service may be resolved through arbitration in accordance
-    with applicable Indian arbitration law.
-  </p>
-
-  <p>
-    Where arbitration is used, the proceedings shall be conducted in English
-    before a sole arbitrator agreed upon by the parties.
-  </p>
-
-  <h3>16.3 Court Proceedings</h3>
-
-  <p>
-    Nothing in these Terms prevents either party from seeking interim,
-    protective, or injunctive relief from a court where permitted by law.
-  </p>
-
-  <p>
-    An arbitration award may also be recognized or enforced by a court having
-    jurisdiction.
-  </p>
-
-
-  <h2 id="changes">17. Changes to These Terms</h2>
-
-  <p>
-    We may update these Terms from time to time.
-  </p>
-
-  <p>
-    If a change is material, we may provide reasonable notice before the
-    updated Terms take effect.
-  </p>
-
-  <p>
-    Your continued use of the Service after updated Terms become effective
-    constitutes acceptance of the revised Terms where permitted by law.
-  </p>
-
-
-  <h2 id="severability">18. Severability</h2>
-
-  <p>
-    If any provision of these Terms is determined to be invalid, illegal, or
-    unenforceable, that provision shall be interpreted or modified to the
-    minimum extent necessary to make it enforceable where possible.
-  </p>
-
-  <p>
-    The remaining provisions shall continue in full force and effect.
-  </p>
-
-
-  <h2 id="waiver">19. Waiver</h2>
-
-  <p>
-    A failure by Cortlet to enforce any provision of these Terms does not
-    constitute a waiver of that provision or any other right.
-  </p>
-
-
-  <h2 id="entire-agreement">20. Entire Agreement</h2>
-
-  <p>
-    These Terms, together with any additional terms, licenses, policies, or
-    agreements expressly incorporated by reference, constitute the agreement
-    governing your use of the Service.
-  </p>
-
-  <p>
-    Separate product-specific terms or software licenses may apply to
-    individual Cortlet products.
-  </p>
-
-
-  <h2 id="contact">21. Contact</h2>
-
-  <p>
-    If you have questions about these Terms, you may contact Cortlet at:
-  </p>
-
-  <ul>
-    <li>
-      <strong>Email:</strong>
-      <a href="mailto:support@cortlet.com"> support@cortlet.com</a>
-    </li>
-
-    <li>
-      <strong>Website:</strong>
-      <a href="https://www.cortlet.com"> https://www.cortlet.com</a>
-    </li>
-  </ul>
-
-  <hr>
-
-  <p>
-    <em>These Terms and Conditions were last updated on 2026-08-29.</em>
-  </p>
-
+<h1>Terms and Conditions</h1>
+
+<div class="legal-meta">
+  <p><strong>Effective Date:</strong> 2026-08-29</p>
+  <p><strong>Last Updated:</strong> 2026-08-30</p>
 </div>
+
+<p>
+  These Terms and Conditions ("Terms") govern your access to and use of
+  Cortlet's website, waitlist, documentation, WebSocket gateway, webhook
+  translation functionality, and related services.
+</p>
+
+<p>
+  By accessing or using the Service, you agree to these Terms. If you do not
+  agree to these Terms, you must not use the Service.
+</p>
+
+<div class="legal-toc">
+  <h2>Table of Contents</h2>
+
+  <ol>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#definitions">Definitions</a></li>
+    <li><a href="#eligibility">Eligibility</a></li>
+    <li><a href="#waitlist">Waitlist</a></li>
+    <li><a href="#service-operation">Service Operation</a></li>
+    <li><a href="#license">License to Use the Service</a></li>
+    <li><a href="#intellectual-property">Intellectual Property</a></li>
+    <li><a href="#user-data">User Data</a></li>
+    <li><a href="#acceptable-use">Acceptable Use</a></li>
+    <li><a href="#third-party-services">Third-Party Services</a></li>
+    <li><a href="#availability">Service Availability and Changes</a></li>
+    <li><a href="#warranties">Disclaimer of Warranties</a></li>
+    <li><a href="#limitation-liability">Limitation of Liability</a></li>
+    <li><a href="#indemnification">Indemnification</a></li>
+    <li><a href="#termination">Suspension and Termination</a></li>
+    <li><a href="#governing-law">Governing Law</a></li>
+    <li><a href="#dispute-resolution">Dispute Resolution</a></li>
+    <li><a href="#changes">Changes to These Terms</a></li>
+    <li><a href="#severability">Severability</a></li>
+    <li><a href="#waiver">Waiver</a></li>
+    <li><a href="#entire-agreement">Entire Agreement</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</div>
+
+
+<h2 id="introduction">1. Introduction</h2>
+
+<p>
+  Cortlet is a WebSocket gateway designed for serverless architectures.
+  The Service maintains persistent WebSocket connections with clients and
+  translates client messages into stateless HTTP webhook requests that can be
+  processed by downstream serverless functions or other HTTP backends.
+</p>
+
+<p>
+  Where supported, Cortlet may receive an HTTP response from a user's backend
+  and transmit that response back through the originating WebSocket connection.
+</p>
+
+<p>
+  These Terms form an agreement between you and the operator of Cortlet
+  concerning your use of the Service.
+</p>
+
+
+<h2 id="definitions">2. Definitions</h2>
+
+<ul>
+  <li>
+    <strong>"Cortlet", "we", "us", or "our"</strong> means the Cortlet brand
+    and the person or persons operating it.
+  </li>
+
+  <li>
+    <strong>"Service"</strong> means the Cortlet website, waitlist,
+    documentation, WebSocket gateway, webhook translation system, connection
+    handling infrastructure, and related functionality made available by
+    Cortlet.
+  </li>
+
+  <li>
+    <strong>"WebSocket Connection"</strong> means a persistent WebSocket
+    connection established between a Client and the Cortlet gateway.
+  </li>
+
+  <li>
+    <strong>"Webhook Endpoint"</strong> means an HTTP endpoint designated by a
+    User to receive requests generated by Cortlet from WebSocket messages.
+  </li>
+
+  <li>
+    <strong>"CortletPacket"</strong> means the structured request format used
+    by Cortlet to represent and transmit information received through a
+    WebSocket Connection to a configured HTTP backend.
+  </li>
+
+  <li>
+    <strong>"Client"</strong> means software, a device, application, service,
+    or other system that establishes a WebSocket Connection with Cortlet.
+  </li>
+
+  <li>
+    <strong>"User", "you", or "your"</strong> means any individual or entity
+    accessing or using the Service.
+  </li>
+
+  <li>
+    <strong>"User Data"</strong> means messages, payloads, identifiers,
+    webhook responses, configuration information, or other data transmitted
+    by or on behalf of a User through the Service.
+  </li>
+</ul>
+
+
+<h2 id="eligibility">3. Eligibility</h2>
+
+<p>
+  You may use the Service only if you are legally permitted to do so under
+  applicable law.
+</p>
+
+<p>
+  If you use the Service on behalf of an organization, company, or other
+  entity, you represent that you have authority to act on its behalf and bind
+  it to these Terms.
+</p>
+
+
+<h2 id="waitlist">4. Waitlist</h2>
+
+<p>
+  Cortlet may operate a waitlist for early, preview, beta, or general access
+  to the Service.
+</p>
+
+<p>
+  To join the waitlist, you may be asked to provide an email address.
+  Joining the waitlist does not create an account and does not guarantee
+  access to the Service.
+</p>
+
+<p>
+  You agree to provide an email address that you are authorized to use.
+</p>
+
+<p>
+  Cortlet may determine when, whether, and in what order waitlist participants
+  receive access to the Service.
+</p>
+
+<p>
+  Information submitted through the waitlist will be handled in accordance
+  with Cortlet's Privacy Policy.
+</p>
+
+
+<h2 id="service-operation">5. Service Operation</h2>
+
+<h3>5.1 WebSocket Connections</h3>
+
+<p>
+  Cortlet may maintain persistent WebSocket Connections between Clients and
+  Cortlet's infrastructure.
+</p>
+
+<p>
+  Connection duration, latency, throughput, capacity, and availability may
+  vary based on network conditions, infrastructure limitations, maintenance,
+  security requirements, upstream providers, and other operational factors.
+</p>
+
+<h3>5.2 Connection Authentication</h3>
+
+<p>
+  Cortlet may authenticate or authorize WebSocket Connections using
+  short-lived opaque handshake tickets, tokens, connection identifiers,
+  client identifiers, or similar mechanisms.
+</p>
+
+<p>
+  Where a short-lived ticket or similar credential is designed for one-time
+  use, Cortlet may invalidate or burn that credential after a successful
+  connection.
+</p>
+
+<p>
+  Users are responsible for securely generating, storing, transmitting, and
+  managing credentials and identifiers used with the Service.
+</p>
+
+<h3>5.3 Stateless Webhook Translation</h3>
+
+<p>
+  Cortlet may translate data received through a WebSocket Connection into an
+  HTTP request and send that request to a Webhook Endpoint configured by the
+  User.
+</p>
+
+<p>
+  WebSocket messages may be wrapped into a CortletPacket or another documented
+  request format before being transmitted to a backend.
+</p>
+
+<p>
+  Users are responsible for ensuring that their Webhook Endpoints are valid,
+  secure, available, correctly configured, and capable of processing requests
+  generated by Cortlet.
+</p>
+
+<h3>5.4 Backend Responses</h3>
+
+<p>
+  Where supported, Cortlet may receive an HTTP response from a User's backend
+  and transmit information from that response back through the originating
+  WebSocket Connection.
+</p>
+
+<p>
+  Cortlet does not guarantee that any request or response will be delivered,
+  processed, received, returned, or transmitted within a particular period
+  of time.
+</p>
+
+<h3>5.5 User Infrastructure</h3>
+
+<p>
+  Cortlet does not operate or control your serverless functions, webhook
+  endpoints, applications, databases, cloud environment, or other downstream
+  infrastructure.
+</p>
+
+<p>
+  You are responsible for the configuration, security, reliability,
+  scalability, and operation of your own infrastructure.
+</p>
+
+
+<h2 id="license">6. License to Use the Service</h2>
+
+<p>
+  Subject to these Terms, Cortlet grants you a limited, revocable,
+  non-exclusive, non-transferable, and non-sublicensable license to access and
+  use the Service for lawful personal, development, testing, or internal
+  business purposes.
+</p>
+
+<p>
+  This license does not transfer ownership of Cortlet's software, systems,
+  documentation, branding, technology, or intellectual property to you.
+</p>
+
+
+<h2 id="intellectual-property">7. Intellectual Property</h2>
+
+<h3>7.1 Cortlet Content</h3>
+
+<p>
+  Unless otherwise stated, Cortlet's proprietary software, website design,
+  branding, documentation, interfaces, graphics, functionality, and original
+  content are owned by or licensed to Cortlet.
+</p>
+
+<p>
+  Such materials may be protected by copyright, trademark, trade dress, and
+  other applicable intellectual property laws.
+</p>
+
+<h3>7.2 Open-Source Software</h3>
+
+<p>
+  Certain Cortlet software or components may be released under separate
+  open-source licenses.
+</p>
+
+<p>
+  Where an open-source license applies, that license governs your use of the
+  relevant software and takes precedence over conflicting provisions of these
+  Terms with respect to that software.
+</p>
+
+<h3>7.3 Restrictions</h3>
+
+<p>
+  Except where permitted by applicable law, documentation, or an applicable
+  open-source license, you may not:
+</p>
+
+<ul>
+  <li>
+    Copy, reproduce, modify, or distribute proprietary Cortlet software or
+    content without authorization
+  </li>
+
+  <li>
+    Remove copyright, trademark, attribution, or proprietary notices
+  </li>
+
+  <li>
+    Misrepresent Cortlet software, services, or content as your own
+  </li>
+
+  <li>
+    Use Cortlet branding in a way that falsely implies sponsorship,
+    partnership, affiliation, or endorsement
+  </li>
+
+  <li>
+    Reverse engineer or attempt to obtain proprietary source code where such
+    source code has not been made publicly available
+  </li>
+</ul>
+
+
+<h2 id="user-data">8. User Data</h2>
+
+<h3>8.1 Ownership</h3>
+
+<p>
+  As between you and Cortlet, you retain your rights in User Data transmitted
+  through the Service.
+</p>
+
+<p>
+  Cortlet does not acquire ownership of your application messages, webhook
+  payloads, backend responses, or other User Data merely because that data is
+  transmitted through the Service.
+</p>
+
+<h3>8.2 Processing of User Data</h3>
+
+<p>
+  You authorize Cortlet to receive, process, transmit, temporarily hold,
+  transform, and otherwise handle User Data as reasonably necessary to operate,
+  secure, maintain, troubleshoot, and provide the Service.
+</p>
+
+<p>
+  This may include receiving WebSocket messages, constructing CortletPackets,
+  sending HTTP requests to configured Webhook Endpoints, receiving backend
+  responses, and transmitting responses to connected Clients.
+</p>
+
+<h3>8.3 Your Responsibilities</h3>
+
+<p>
+  You are responsible for ensuring that you have all rights, permissions,
+  notices, and lawful bases necessary to transmit User Data through Cortlet.
+</p>
+
+<p>
+  You are also responsible for determining whether Cortlet is appropriate for
+  the sensitivity and regulatory requirements of the data your application
+  processes.
+</p>
+
+
+<h2 id="acceptable-use">9. Acceptable Use</h2>
+
+<p>You must not use the Service to:</p>
+
+<ul>
+  <li>Violate applicable laws or regulations</li>
+
+  <li>
+    Infringe intellectual property, privacy, contractual, or other legal rights
+  </li>
+
+  <li>
+    Distribute malware, ransomware, viruses, malicious payloads, or harmful code
+  </li>
+
+  <li>
+    Attempt unauthorized access to systems, networks, services, or accounts
+  </li>
+
+  <li>
+    Interfere with, disrupt, overload, or intentionally degrade Cortlet or
+    third-party infrastructure
+  </li>
+
+  <li>
+    Circumvent authentication, handshake tickets, rate limits, quotas,
+    connection restrictions, or security controls
+  </li>
+
+  <li>
+    Probe, scan, or test vulnerabilities without authorization
+  </li>
+
+  <li>
+    Send spam, phishing messages, fraudulent communications, or deceptive
+    traffic
+  </li>
+
+  <li>
+    Use the Service to facilitate intentionally harmful, abusive, or fraudulent
+    activity
+  </li>
+
+  <li>
+    Falsify connection identifiers, client identifiers, webhook information,
+    or other technical information in order to deceive or compromise the
+    Service
+  </li>
+</ul>
+
+<p>
+  Cortlet may restrict, block, or suspend traffic or access where reasonably
+  necessary to protect the Service, users, third parties, or infrastructure.
+</p>
+
+
+<h2 id="third-party-services">10. Third-Party Services</h2>
+
+<p>
+  Cortlet may rely on or interact with third-party cloud providers,
+  infrastructure providers, hosting platforms, networks, authentication
+  systems, analytics tools, email services, or other external services.
+</p>
+
+<p>
+  Cortlet does not control third-party services and does not guarantee their
+  availability, reliability, security, performance, or continued operation.
+</p>
+
+<p>
+  Your own Webhook Endpoints, serverless providers, backend systems, and other
+  services connected to Cortlet are also outside Cortlet's control.
+</p>
+
+<p>
+  Your use of third-party services may be governed by separate terms,
+  agreements, or privacy policies issued by those providers.
+</p>
+
+
+<h2 id="availability">11. Service Availability and Changes</h2>
+
+<p>
+  Cortlet may modify, update, replace, restrict, suspend, or discontinue all
+  or part of the Service at any time.
+</p>
+
+<p>
+  We do not guarantee that the Service will always be available,
+  uninterrupted, error-free, secure, or compatible with every Client,
+  framework, runtime, cloud provider, Webhook Endpoint, or network
+  environment.
+</p>
+
+<p>
+  Features identified as alpha, beta, preview, experimental, early access,
+  development, or similar may contain errors and may change or be
+  discontinued without notice.
+</p>
+
+<p>
+  We may perform maintenance, infrastructure migrations, security updates,
+  capacity changes, or emergency work that temporarily affects the Service.
+</p>
+
+
+<h2 id="warranties">12. Disclaimer of Warranties</h2>
+
+<div class="legal-notice">
+  <p>
+    <strong>
+      TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE SERVICE IS
+      PROVIDED "AS IS" AND "AS AVAILABLE."
+    </strong>
+  </p>
+</div>
+
+<p>
+  Cortlet makes no express or implied warranty that the Service will be
+  uninterrupted, error-free, secure, accurate, complete, reliable, or suitable
+  for a particular purpose.
+</p>
+
+<p>
+  Cortlet does not guarantee uninterrupted WebSocket connectivity, successful
+  webhook delivery, successful backend execution, response delivery, specific
+  latency, specific throughput, or availability of downstream infrastructure.
+</p>
+
+<p>
+  To the maximum extent permitted by applicable law, Cortlet disclaims all
+  warranties, whether express, implied, statutory, or otherwise, including
+  implied warranties of merchantability, fitness for a particular purpose,
+  title, and non-infringement.
+</p>
+
+<p>
+  You are responsible for determining whether the Service is suitable for your
+  intended use and for implementing appropriate backups, retries, validation,
+  monitoring, failover, security controls, and recovery mechanisms.
+</p>
+
+
+<h2 id="limitation-liability">13. Limitation of Liability</h2>
+
+<h3>13.1 Infrastructure and Delivery Risks</h3>
+
+<p>
+  To the maximum extent permitted by applicable law, Cortlet and the person or
+  persons operating Cortlet shall not be liable for losses or damages arising
+  from or relating to:
+</p>
+
+<ul>
+  <li>Interrupted, rejected, disconnected, or terminated WebSocket Connections</li>
+
+  <li>
+    Failed, delayed, duplicated, malformed, corrupted, or undelivered webhook
+    requests
+  </li>
+
+  <li>
+    Failed, malformed, delayed, duplicated, or undelivered backend responses
+  </li>
+
+  <li>
+    Network outages, latency, packet loss, routing failures, DNS failures, or
+    connectivity problems
+  </li>
+
+  <li>
+    Serverless execution failures, timeouts, cold starts, invocation limits,
+    or platform restrictions
+  </li>
+
+  <li>
+    Incorrect configuration of Clients, Webhook Endpoints, authentication
+    credentials, or backend infrastructure
+  </li>
+
+  <li>
+    Loss, corruption, duplication, alteration, or unintended processing of
+    User Data
+  </li>
+
+  <li>
+    Third-party hosting, cloud, networking, serverless, authentication, or
+    infrastructure providers
+  </li>
+
+  <li>
+    Security incidents caused by systems, credentials, applications, networks,
+    or parties outside Cortlet's reasonable control
+  </li>
+
+  <li>
+    Changes, outages, restrictions, or failures affecting third-party services
+    on which the Service depends
+  </li>
+</ul>
+
+<h3>13.2 Excluded Damages</h3>
+
+<p>
+  TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, CORTLET AND THE PERSON OR
+  PERSONS OPERATING CORTLET SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL,
+  SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES.
+</p>
+
+<p>
+  THIS INCLUDES, WITHOUT LIMITATION, LOSS OF PROFITS, REVENUE, BUSINESS
+  OPPORTUNITIES, GOODWILL, USE, DATA, EXPECTED SAVINGS, OR BUSINESS
+  INTERRUPTION.
+</p>
+
+<p>
+  These limitations apply regardless of the legal theory on which a claim is
+  based, including contract, tort, negligence, strict liability, statute, or
+  otherwise, even if Cortlet has been advised of the possibility of such
+  damages.
+</p>
+
+<h3>13.3 Aggregate Liability Cap</h3>
+
+<p>
+  TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE TOTAL AGGREGATE
+  LIABILITY OF CORTLET AND THE PERSON OR PERSONS OPERATING CORTLET FOR ALL
+  CLAIMS ARISING OUT OF OR RELATING TO THE SERVICE OR THESE TERMS SHALL NOT
+  EXCEED THE GREATER OF:
+</p>
+
+<ul>
+  <li>
+    The amount you paid to Cortlet for the Service during the twelve months
+    immediately preceding the event giving rise to the claim; or
+  </li>
+
+  <li>
+    INR 1,000 if you did not pay Cortlet for the Service.
+  </li>
+</ul>
+
+<h3>13.4 Non-Excludable Liability</h3>
+
+<p>
+  Nothing in these Terms excludes or limits liability where such liability
+  cannot lawfully be excluded or limited under applicable law.
+</p>
+
+<p>
+  Where applicable law does not permit a particular limitation or exclusion,
+  that limitation or exclusion shall apply only to the maximum extent
+  permitted by law.
+</p>
+
+
+<h2 id="indemnification">14. Indemnification</h2>
+
+<p>
+  To the extent permitted by applicable law, you agree to indemnify and hold
+  harmless Cortlet and the person or persons operating Cortlet from claims,
+  liabilities, damages, losses, and reasonable costs arising from or relating
+  to:
+</p>
+
+<ul>
+  <li>Your unlawful or unauthorized use of the Service</li>
+
+  <li>Your material violation of these Terms</li>
+
+  <li>Your infringement or violation of another person's rights</li>
+
+  <li>User Data transmitted by or on behalf of you through the Service</li>
+
+  <li>
+    Your Client software, Webhook Endpoints, backend systems, or downstream
+    infrastructure
+  </li>
+</ul>
+
+
+<h2 id="termination">15. Suspension and Termination</h2>
+
+<h3>15.1 Suspension or Restriction by Cortlet</h3>
+
+<p>
+  Cortlet may restrict, suspend, block, or terminate access to all or part of
+  the Service where reasonably necessary due to misuse, a material violation
+  of these Terms, security concerns, legal requirements, infrastructure risks,
+  abusive traffic, or risks to Cortlet or third parties.
+</p>
+
+<h3>15.2 Ending Your Use</h3>
+
+<p>
+  You may stop using the Service at any time.
+</p>
+
+<p>
+  If you joined the Cortlet waitlist and no longer wish to receive
+  waitlist-related communications, you may use any unsubscribe mechanism
+  provided or contact Cortlet at
+  <a href="mailto:support@cortlet.com">support@cortlet.com</a>.
+</p>
+
+<h3>15.3 Effect of Termination</h3>
+
+<p>
+  Upon termination or restriction of access, your authorization to use the
+  affected portion of the Service ends.
+</p>
+
+<p>
+  Provisions which by their nature should survive termination shall remain
+  effective, including intellectual property provisions, warranty disclaimers,
+  limitations of liability, indemnification obligations, and dispute
+  provisions.
+</p>
+
+
+<h2 id="governing-law">16. Governing Law</h2>
+
+<p>
+  These Terms shall be governed by and construed in accordance with the laws
+  of India, without regard to conflict-of-law principles.
+</p>
+
+
+<h2 id="dispute-resolution">17. Dispute Resolution</h2>
+
+<h3>17.1 Informal Resolution</h3>
+
+<p>
+  Before commencing formal dispute-resolution proceedings, the parties should
+  make a reasonable attempt to resolve the dispute informally.
+</p>
+
+<p>
+  You may contact Cortlet at
+  <a href="mailto:support@cortlet.com">support@cortlet.com</a>
+  with a description of the dispute and any relevant information.
+</p>
+
+<h3>17.2 Arbitration</h3>
+
+<p>
+  Subject to applicable law, any dispute, controversy, or claim arising out of
+  or relating to these Terms or the Service shall be resolved by arbitration
+  in accordance with the Arbitration and Conciliation Act, 1996, as amended
+  from time to time.
+</p>
+
+<p>
+  The arbitration shall be conducted before a sole arbitrator mutually agreed
+  upon by the parties.
+</p>
+
+<p>
+  The seat and venue of arbitration shall be in India, and the proceedings
+  shall be conducted in English, unless otherwise required by applicable law
+  or agreed by the parties.
+</p>
+
+<h3>17.3 Court Proceedings</h3>
+
+<p>
+  Nothing in these Terms prevents either party from seeking interim,
+  protective, or injunctive relief from a court of competent jurisdiction
+  where permitted by applicable law.
+</p>
+
+<p>
+  An arbitration award may be recognized or enforced by a court having
+  jurisdiction.
+</p>
+
+
+<h2 id="changes">18. Changes to These Terms</h2>
+
+<p>
+  Cortlet may update these Terms from time to time to reflect changes to the
+  Service, applicable law, security requirements, technical functionality, or
+  business practices.
+</p>
+
+<p>
+  If a change is material, Cortlet may provide reasonable notice before the
+  updated Terms take effect.
+</p>
+
+<p>
+  Your continued use of the Service after updated Terms become effective
+  constitutes acceptance of the revised Terms where permitted by applicable
+  law.
+</p>
+
+
+<h2 id="severability">19. Severability</h2>
+
+<p>
+  If any provision of these Terms is determined to be invalid, illegal, or
+  unenforceable, that provision shall be interpreted or modified to the
+  minimum extent necessary to make it valid and enforceable where possible.
+</p>
+
+<p>
+  The remaining provisions shall continue in full force and effect.
+</p>
+
+
+<h2 id="waiver">20. Waiver</h2>
+
+<p>
+  A failure by Cortlet to exercise or enforce any right or provision of these
+  Terms does not constitute a waiver of that right or provision.
+</p>
+
+<p>
+  A waiver is effective only to the extent expressly provided and does not
+  constitute a waiver of any later breach or violation.
+</p>
+
+
+<h2 id="entire-agreement">21. Entire Agreement</h2>
+
+<p>
+  These Terms, together with any policies, notices, licenses, or additional
+  terms expressly incorporated by reference, constitute the agreement
+  governing your use of the Service.
+</p>
+
+<p>
+  Certain Cortlet software, APIs, preview programs, or other products may be
+  subject to additional product-specific terms or software licenses.
+</p>
+
+<p>
+  If separate terms expressly apply to a particular Cortlet product or
+  feature, those terms shall govern that product or feature to the extent of
+  any conflict with these Terms.
+</p>
+
+
+<h2 id="contact">22. Contact</h2>
+
+<p>
+  If you have questions, concerns, or notices regarding these Terms, you may
+  contact Cortlet at:
+</p>
+
+<ul>
+  <li>
+    <strong>Email:</strong>
+    <a href="mailto:support@cortlet.com">support@cortlet.com</a>
+  </li>
+
+  <li>
+    <strong>Website:</strong>
+    <a href="https://www.cortlet.com">https://www.cortlet.com</a>
+  </li>
+</ul>
+
+<hr>
+
+<p>
+  <em>These Terms and Conditions were last updated on 2026-08-30.</em>
+</p>
 `;

@@ -77,6 +77,16 @@ export function FeaturesGrid() {
           </div>
         ))}
       </div>
+        <section className="mt-12 space-y-4 max-w-xl mx-auto border border-zinc-200 dark:border-zinc-800 p-6 rounded bg-zinc-50/50 dark:bg-zinc-900/10 font-mono text-xs">
+            <div className="text-emerald-500 font-bold uppercase tracking-wider mb-2">
+                Next generation of webhooks
+            </div>
+            <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                Cortlet joins the next generation of cloud-native <strong className="text-zinc-900 dark:text-zinc-100 font-semibold">webhook tools</strong> built specifically for serverless architectures.
+                By translating real-time persistent WebSockets cleanly into stateless HTTP webhooks, we ensure your downstream serverless functions process streaming operational telemetry data instantly without hitches or runtime execution timeouts.
+            </p>
+        </section>
+
     </section>
   );
 }
