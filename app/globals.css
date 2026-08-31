@@ -1,12 +1,17 @@
 @import "tailwindcss";
 
-@layer base {
-  /* Forces all monospace font elements, proxy variables, and pre-formatted text to wrap on mobile */
-  code, pre, .font-mono {
-    word-break: break-all !important;
-    overflow-wrap: break-word !important;
-    white-space: pre-wrap !important;
-  }
+/* src/app/globals.css */
+
+/* Applies to every page globally */
+html, body, main, div, span, p, code {
+  /* 1. Only breaks long tracking variables/URLs if they run out of container space */
+  overflow-wrap: break-word !important;
+
+  /* 2. Overrides standard monospace rules that force lines to clip horizontally */
+  white-space: pre-wrap !important;
+
+  /* 3. Prevents normal text and words from being cut in half mid-syllable */
+  word-break: normal !important;
 }
 
 
