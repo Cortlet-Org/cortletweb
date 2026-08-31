@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
-/* Lock in your Cortlet Premium Developer Dark Mode Palette variables right here */
-:root {
-  --primary: #10b981;       /* Cortlet Emerald Accent */
-  --muted: #a1a1aa;         /* Secondary Metadata Gray */
-  --border: #27272a;        /* Charcoal Zinc Panels */
+@layer base {
+  /* Forces all monospace font elements, proxy variables, and pre-formatted text to wrap on mobile */
+  code, pre, .font-mono {
+    word-break: break-all !important;
+    overflow-wrap: break-word !important;
+    white-space: pre-wrap !important;
+  }
 }
-
-
 
 
 @theme {
@@ -15,14 +15,7 @@
   --font-mono: var(--font-jetbrains-mono), monospace;
 }
 
-/*
-  CRITICAL CORE FIX FOR TAILWIND V4:
-  This tells the compiler that whenever a parent wrapper element features
-  the class name '.dark', it must force downstream dark variant values.
-*/
 @custom-variant dark (&:where(.dark, .dark *));
-/* --- THE ANTI-VIBE COLOR RULES --- */
-
 /* Premium High-Contrast Light Mode Configuration */
 :root {
   background-color: #ffffff;
@@ -43,4 +36,10 @@
 
 body {
   font-family: var(--font-mono);
+}
+
+:root {
+  --primary: #10b981;       /* Cortlet Emerald Accent */
+  --muted: #a1a1aa;         /* Secondary Metadata Gray */
+  --border: #27272a;        /* Charcoal Zinc Panels */
 }

@@ -92,7 +92,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           suppressHydrationWarning
           className={`${inter.variable} ${jetbrainsMono.variable} h-full antialiased`}
       >
-      <body className="min-h-full flex flex-col bg-white text-zinc-950 dark:bg-black dark:text-zinc-50 font-mono">
+      <body className="min-h-full break-words overflow-x-hidden max-w-full flex flex-col bg-white text-zinc-950 dark:bg-black dark:text-zinc-50 font-mono">
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <NavbarComponent/>
             {children}
