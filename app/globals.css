@@ -1,50 +1,152 @@
 @import "tailwindcss";
 
-/* src/app/globals.css */
-
-/* Applies to every page globally */
-html, body, main, div, span, p, code {
-  /* 1. Only breaks long tracking variables/URLs if they run out of container space */
-  overflow-wrap: break-word !important;
-
-  /* 2. Overrides standard monospace rules that force lines to clip horizontally */
-  white-space: pre-wrap !important;
-
-  /* 3. Prevents normal text and words from being cut in half mid-syllable */
-  word-break: normal !important;
-}
-
-
-@theme {
-  --font-sans: var(--font-inter), sans-serif;
-  --font-mono: var(--font-jetbrains-mono), monospace;
-}
-
 @custom-variant dark (&:where(.dark, .dark *));
-/* Premium High-Contrast Light Mode Configuration */
-:root {
-  background-color: #ffffff;
-  color: #09090b;                  /* Hard Near-Black Ink Text */
-  --text-muted: #52525b;          /* Zinc 600: Punchy contrast for subtitles */
-  --bg-surface: #f4f4f5;          /* Zinc 100: Soft gray for the live proxy box backdrop */
-  --border-subtle: #e4e4e7;       /* Zinc 200: Crisp layout borders */
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
 }
 
-/* Absolute Black Dark Mode Configuration */
-:where(.dark) {
-  background-color: #000000;
-  color: #f4f4f5;                  /* Off-white Text */
-  --text-muted: #a1a1aa;          /* Zinc 400: Clear gray readability */
-  --bg-surface: #09090b;          /* Near-black for the live proxy box */
-  --border-subtle: #27272a;       /* Zinc 800: Subtle terminal lines */
+/* ------------------------------
+   CORTLET DESIGN TOKENS
+------------------------------ */
+
+:root {
+  --background: #ffffff;
+  --foreground: #09090b;
+
+  --surface: #fafafa;
+  --surface-strong: #f4f4f5;
+
+  --muted: #71717a;
+  --muted-strong: #52525b;
+
+  --border: #e4e4e7;
+  --border-strong: #d4d4d8;
+
+  --cortlet-green: #10b981;
+  --cortlet-green-soft: #34d399;
+  --cortlet-green-dark: #059669;
+}
+
+.dark {
+  --background: #000000;
+  --foreground: #fafafa;
+
+  --surface: #09090b;
+  --surface-strong: #18181b;
+
+  --muted: #a1a1aa;
+  --muted-strong: #d4d4d8;
+
+  --border: #27272a;
+  --border-strong: #3f3f46;
+}
+
+/* ------------------------------
+   BASE
+------------------------------ */
+
+html {
+  scroll-behavior: smooth;
+  background: var(--background);
 }
 
 body {
-  font-family: var(--font-mono);
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
 }
 
-:root {
-  --primary: #10b981;       /* Cortlet Emerald Accent */
-  --muted: #a1a1aa;         /* Secondary Metadata Gray */
-  --border: #27272a;        /* Charcoal Zinc Panels */
+/* ------------------------------
+   TYPOGRAPHY
+------------------------------ */
+
+code,
+pre,
+kbd,
+samp {
+  font-family: var(--font-jetbrains-mono), monospace;
+}
+
+code {
+  overflow-wrap: anywhere;
+}
+
+pre {
+  overflow-x: auto;
+  white-space: pre;
+}
+
+/* ------------------------------
+   SELECTION
+------------------------------ */
+
+::selection {
+  background: color-mix(
+          in srgb,
+          var(--cortlet-green) 22%,
+          transparent
+  );
+}
+
+/* ------------------------------
+   FOCUS
+------------------------------ */
+
+:focus-visible {
+  outline: 2px solid var(--cortlet-green);
+  outline-offset: 2px;
+}
+
+/* ------------------------------
+   SCROLLBAR
+------------------------------ */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-strong) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 999px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--muted);
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+/* ------------------------------
+   REDUCED MOTION
+------------------------------ */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

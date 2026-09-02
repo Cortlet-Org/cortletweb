@@ -1,40 +1,40 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Documentation",
+    title: "EULA",
 
     description:
-        "Learn how to connect clients, receive WebSocket events as HTTP webhooks, and send realtime messages through Cortlet.",
+        "Review the Cortlet End User License Agreement governing use of Cortlet software and related application components.",
 
     alternates: {
-        canonical: "/docs",
+        canonical: "/legal/eula",
     },
 
     openGraph: {
-        title: "Cortlet Documentation",
+        title: "Cortlet EULA",
         description:
-            "Guides and technical reference for building realtime serverless applications with Cortlet.",
-        url: "/docs",
+            "The End User License Agreement governing use of Cortlet software.",
+        url: "/legal/eula",
         images: [
             {
                 url: "/og-image.png",
                 width: 1200,
                 height: 630,
-                alt: "Cortlet Documentation",
+                alt: "Cortlet End User License Agreement",
             },
         ],
     },
 
     twitter: {
         card: "summary_large_image",
-        title: "Cortlet Documentation",
+        title: "Cortlet EULA",
         description:
-            "Guides and technical reference for building realtime serverless applications with Cortlet.",
+            "The End User License Agreement governing use of Cortlet software.",
         images: ["/twitter-card.png"],
     },
 };
 
-export default function DocsLayout({
+export default function EulaLayout({
                                        children,
                                    }: Readonly<{
     children: React.ReactNode;

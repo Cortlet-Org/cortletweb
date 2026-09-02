@@ -1,46 +1,153 @@
 import Link from "next/link";
+import { FadeIn } from "@/components/animations/FadeIn";
+import { Hover } from "@/components/animations/Hover";
+
+const legalLinks = [
+    {
+        href: "/legal/privacy",
+        number: "01",
+        title: "Privacy Policy",
+        description:
+            "How Cortlet handles personal information, analytics, waitlist data, and service-related privacy.",
+    },
+    {
+        href: "/legal/tos",
+        number: "02",
+        title: "Terms of Service",
+        description:
+            "The terms that govern access to and use of Cortlet and its related services.",
+    },
+    {
+        href: "/legal/eula",
+        number: "03",
+        title: "End User License Agreement",
+        description:
+            "The license terms governing use of Cortlet software and related application components.",
+    },
+];
 
 export default function LegalHubPage() {
     return (
-        <main className="min-h-screen bg-white text-zinc-950 dark:bg-black dark:text-zinc-50 font-mono p-6 md:p-12 max-w-2xl mx-auto space-y-12 selection:bg-emerald-500/20 antialiased">
+        <main className="min-h-screen bg-white text-zinc-950 dark:bg-black dark:text-zinc-50">
+            {/* HERO */}
+            <section className="border-b border-zinc-200 dark:border-zinc-800">
+                <div className="mx-auto max-w-5xl px-4 py-24 sm:px-6 lg:px-8 lg:py-28">
+                    <FadeIn>
+                        <p className="font-mono text-xs uppercase tracking-[0.16em] text-[var(--cortlet-green)]">
+                            Legal
+                        </p>
+                    </FadeIn>
 
-            {/* HUD ROUTING HEADER */}
-            <header className="space-y-2 border-b border-zinc-200 dark:border-zinc-800 pb-6">
-                <div className="flex items-center gap-2">
-                    <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
-                    <h1 className="text-xs font-bold tracking-wider uppercase text-emerald-500">
-                        Cortlet Legal
-                    </h1>
+                    <FadeIn delay={0.08}>
+                        <h1 className="mt-4 max-w-3xl text-4xl font-semibold tracking-[-0.04em] sm:text-5xl">
+                            Legal information,
+                            <br />
+                            without the legal maze.
+                        </h1>
+                    </FadeIn>
+
+                    <FadeIn delay={0.16}>
+                        <p className="mt-6 max-w-2xl text-base leading-7 text-zinc-600 dark:text-zinc-400">
+                            Review Cortlet&apos;s privacy terms, usage conditions, and other
+                            legal documentation.
+                        </p>
+                    </FadeIn>
+
+                    <FadeIn delay={0.24}>
+                        <div className="mt-6 inline-flex items-start gap-3 rounded-lg border border-zinc-200 bg-zinc-50 px-4 py-3 text-sm text-zinc-600 dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-400">
+                            <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--cortlet-green)]" />
+                            <span>
+                Cortlet is currently unavailable to users in the European Union.
+              </span>
+                        </div>
+                    </FadeIn>
                 </div>
-                <p className="text-[10px] text-zinc-500">All legal documents (e.g. privacy policy) links are here. Note: Cortlet is banned for EU users.</p>
-            </header>
+            </section>
 
-            {/* COMPLIANCE ROUTING ACTION GRID */}
-            <div className="flex flex-col gap-4">
-                <Link
-                    href="/legal/privacy"
-                    className="border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/50 p-4 rounded text-xs hover:border-emerald-500 transition-colors flex justify-between items-center group"
-                >
-                    <span>01 - Privacy Policy</span>
-                    <span className="text-emerald-500 group-hover:translate-x-1 transition-transform">➔</span>
-                </Link>
+            {/* LEGAL DOCUMENTS */}
+            <section className="border-b border-zinc-200 dark:border-zinc-800">
+                <div className="mx-auto max-w-5xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
+                    <FadeIn>
+                        <div className="mb-10">
+                            <p className="font-mono text-xs uppercase tracking-[0.16em] text-zinc-400">
+                                Documents
+                            </p>
 
-                <Link
-                    href="/legal/tos"
-                    className="border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/50 p-4 rounded text-xs hover:border-emerald-500 transition-colors flex justify-between items-center group"
-                >
-                    <span>02 - Terms of Service</span>
-                    <span className="text-emerald-500 group-hover:translate-x-1 transition-transform">➔</span>
-                </Link>
-            </div>
+                            <h2 className="mt-3 text-2xl font-semibold tracking-[-0.03em] sm:text-3xl">
+                                Policies and terms
+                            </h2>
+                        </div>
+                    </FadeIn>
 
-            {/* PORTAL RETRACT PATH */}
-            <footer className="pt-6 border-t border-zinc-200 dark:border-zinc-800 text-xs">
-                <Link href="/" className="text-emerald-500 hover:text-emerald-400 transition-colors inline-flex items-center gap-1">
-                    <span>➔</span> <span className="underline underline-offset-4">Return to homepage</span>
-                </Link>
-            </footer>
+                    <div className="grid gap-px overflow-hidden rounded-xl border border-zinc-200 bg-zinc-200 dark:border-zinc-800 dark:bg-zinc-800">
+                        {legalLinks.map((item, index) => (
+                            <FadeIn key={item.href} delay={index * 0.08}>
+                                <Hover scale={1.005} y={-1}>
+                                    <Link
+                                        href={item.href}
+                                        className="group block bg-white p-6 transition-colors hover:bg-zinc-50 sm:p-7 dark:bg-black dark:hover:bg-zinc-950"
+                                    >
+                                        <div className="flex items-start justify-between gap-6">
+                                            <div className="flex min-w-0 gap-5">
+                        <span className="pt-1 font-mono text-xs text-zinc-400">
+                          {item.number}
+                        </span>
+
+                                                <div className="min-w-0">
+                                                    <h3 className="text-lg font-medium">
+                                                        {item.title}
+                                                    </h3>
+
+                                                    <p className="mt-2 max-w-2xl text-sm leading-6 text-zinc-500 dark:text-zinc-400">
+                                                        {item.description}
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <span className="shrink-0 font-mono text-sm text-zinc-400 transition-transform duration-200 group-hover:translate-x-1 group-hover:text-[var(--cortlet-green)]">
+                        →
+                      </span>
+                                        </div>
+                                    </Link>
+                                </Hover>
+                            </FadeIn>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* FOOTER CTA */}
+            <section>
+                <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
+                    <FadeIn>
+                        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                            <p className="text-sm text-zinc-500 dark:text-zinc-400">
+                                Looking for product documentation instead?
+                            </p>
+
+                            <div className="flex flex-wrap gap-3">
+                                <Hover>
+                                    <Link
+                                        href="/docs"
+                                        className="inline-flex h-10 items-center justify-center rounded-md border border-zinc-200 px-4 text-sm font-medium text-zinc-700 transition-colors hover:bg-zinc-100 dark:border-zinc-800 dark:text-zinc-300 dark:hover:bg-zinc-900"
+                                    >
+                                        View docs
+                                    </Link>
+                                </Hover>
+
+                                <Hover>
+                                    <Link
+                                        href="/"
+                                        className="inline-flex h-10 items-center justify-center rounded-md bg-zinc-950 px-4 text-sm font-medium text-white transition-colors hover:bg-zinc-800 dark:bg-white dark:text-black dark:hover:bg-zinc-200"
+                                    >
+                                        Return home
+                                    </Link>
+                                </Hover>
+                            </div>
+                        </div>
+                    </FadeIn>
+                </div>
+            </section>
         </main>
     );
 }
-
